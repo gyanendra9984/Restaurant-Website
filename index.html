@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grocery Store</title>
+
+    <link rel="icon" type="image/icon" href="images/cooking.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
 </head>
 <body>
@@ -22,7 +23,7 @@
             <a href="#products">Products</a>
             <a href="#categories">categories</a>
             <a href="#review">review</a>
-            <a href="#blogs">blogs</a>
+            <a href="#recipes">recipes</a>
         </nav>
 
         <!-- Icons -->
@@ -81,8 +82,8 @@
     </header>
     <section class="home" id="home">
         <div class="content">
-           <h3>Fresh And <span>Delicious</span>Product for you</h3>
-           <p>this website desined by Gyanendra Mani</p>
+           <h3>Fresh And <span>Delicious</span> Product for you</h3>
+           <!-- <p>this website desined by Gyanendra Mani</p> -->
            <a href="#" class="btn">shop now</a>
         </div>
    </section>
@@ -224,7 +225,7 @@
           </div>
   
           <div class="swiper-slide box">
-              <img src="images/product-8.jpeg" alt="">
+              <img src="images/product-8.jpg" alt="">
               <h1>fresh orange</h1>
               <div class="price">₹90-/</div>
               <div class="stars">
@@ -255,7 +256,199 @@
        </div>
        </div>
    </section>
-   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+
+   <section class="categories" id="categories">
+      <h1 class="heading">product <span>categories</span></h1>
+    <div class="box-container">
+        <div class="box">
+            <img src="images/cat-1.webp">
+            <h3>vegetables</h3>
+            <p>up to 50% off</p>
+            <a href="#" class="btn">shop now</a>
+        </div>
+
+        <div class="box">
+            <img src="images/cat-2.png">
+            <h3>vegetables</h3>
+            <p>up to 50% off</p>
+            <a href="#" class="btn">shop now</a>
+        </div>
+
+        <div class="box">
+            <img src="images/cat-3.jpg">
+            <h3>vegetables</h3>
+            <p>up to 50% off</p>
+            <a href="#" class="btn">shop now</a>
+        </div>
+
+        <div class="box">
+            <img src="images/cat-4.jpeg">
+            <h3>vegetables</h3>
+            <p>up to 50% off</p>
+            <a href="#" class="btn">shop now</a>
+        </div>
+    </div>
+   </section>
+
+
+   <section class="review" id="review">
+    <h1 class="heading">Customer <span>review</span></h1>
+   <div class="swiper review-slider">
+    <div class="swiper-wrapper">
+    <div class="swiper-slide box">
+        <img src="images/pic-1.png">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam, eos.</p>
+        <h3>john deo</h3>
+        <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half"></i>
+        </div>
+    </div>
+
+
+    <div class="swiper-slide box">
+        <img src="images/pic-2.png">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam, eos.</p>
+        <h3>Sophia Miller</h3>
+        <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half"></i>
+        </div>
+    </div>
+
+
+    <div class="swiper-slide box">
+        <img src="images/pic-3.png">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam, eos.</p>
+        <h3>James Anderson</h3>
+        <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half"></i>
+        </div>
+    </div>
+
+    <div class="swiper-slide box">
+        <img src="images/pic-4.png">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam, eos.</p>
+        <h3>Emily Clark</h3>
+        <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half"></i>
+        </div>
+    </div>
+    </div>
+   </div>
+   </section>
+
+
+   <section class="recipes" id="recipes">
+    <h1 class="heading">Some <span>Recipes</span></h1>
+    <div class="box-container">
+        <!-- <div class="swiper-wraper"> -->
+            <div class="box">
+                <h3>Lorem ipsum dolor sit amet
+                </h3>
+                <p class="about">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi rerum similique dolore?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam, aliquid? </p>
+                <div class="content">
+                    <div class="icons">
+                        <a href="#"><i class="fa fa-user"></i> by Oliva Talor</a>
+                        <a href="#"><i class="fa fa-calendar"></i>1 may 2023</a>
+                    </div>
+                  
+                    <a href="#" class="btn">read more</a>
+                </div>
+            </div>
+    
+    
+            <div class="box">
+                <h3>Lorem ipsum dolor sit amet
+                </h3>
+                <p class="about">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi rerum similique dolore?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat minima, ad consectetur quisquam explicabo voluptates!</p>
+                <div class="content">
+                    <div class="icons">
+                        <a href="#"><i class="fa fa-user"></i> by Michael white</a>
+                        <a href="#"><i class="fa fa-calendar"></i>1 may 2023</a>
+                    </div>
+                   
+                    <a href="#" class="btn">read more</a>
+                </div>
+            </div>
+    
+    
+            <div class="box">
+                <h3>Lorem ipsum dolor sit amet
+                </h3>
+                <p class="about">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi rerum similique dolore?Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores omnis voluptates quidem, incidunt fuga doloribus.</p>
+                <div class="content">
+                    <div class="icons">
+                        <a href="#"><i class="fa fa-user"></i> by Ava Jones</a>
+                        <a href="#"><i class="fa fa-calendar"></i>1 may 2023</a>
+                    </div>
+                    <a href="#" class="btn">read more</a>
+                </div>
+            </div>
+        <!-- </div> -->
+    </div>
+   </section>
+   
+   <section class="footer">
+    <div class="box-container">
+        <div class="box">
+            <!-- <h3>Groco </h3> -->
+            <a href="#" class="logo">Groco<img src="images/cooking.png"></a>
+            <p>Feel free to follow us on our social media handelers all the link are given below.</p>
+            <div class="share">
+                <a href="#" class="fa-brands fa-facebook"></a>
+                <a href="#" class="fa-brands fa-twitter"></a>
+                <a href="#" class="fa-brands fa-square-instagram"></a>
+                <a href="#" class="fa-brands fa-linkedin"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>Contack Info</h3>
+            <a href="#" class="links"><i class="fa fa-phone"></i>+91 9872671238</a>
+            <a href="#" class="links"><i class="fa fa-phone"></i>+91 9872671238</a>
+            <a href="#" class="links"><i class="fa fa-envelope"></i>lrestaurant@gmail.com</a>
+            <a href="#" class="links"><i class="fa fa-map-marker"></i>Punjab, India</a>
+        </div>
+
+        <div class="box">
+            <h3>Quick Links</h3>
+           <a href="#" class="links"><i class="fa fa-arrow-right"></i>Home</a>
+           <a href="#" class="links"><i class="fa fa-arrow-right"></i>Features</a>
+           <a href="#" class="links"><i class="fa fa-arrow-right"></i>Products</a>
+           <a href="#" class="links"><i class="fa fa-arrow-right"></i>Categories</a>
+           <a href="#" class="links"><i class="fa fa-arrow-right"></i>Review</a>
+           <a href="#" class="links"><i class="fa fa-arrow-right"></i>Blogs</a>
+        </div>
+
+            <div class="box">
+                <h3>Newsletter</h3>
+                <p>Suscribe For Latest Updates</p>
+                <input type="email" placeholder="Your Email" class="email">
+                <input type="submit"value="Subscribe" class="btn">
+                <img src="images/payment.png" class="payment-img" >
+            </div>
+    </div>
+    </div>
+   <div class="credit">Created by <span>Gyanendra Mani</span> | All Rights Reserverd</div>
+   </section>
+
+   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
     
 </body>

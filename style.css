@@ -2,7 +2,7 @@
 
 :root {
     --box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0,.1);
-    --border: 2rem solid rgba(0, 0, 0.1);
+    --border: .2rem solid rgba(0, 0, 0.1);
     --outline: .1rem solid rgba(0, 0, 0.1);
 }
 
@@ -65,6 +65,7 @@ section{
     top: 0;
     left: 0;
     right: 0;
+    z-index: 100;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -134,6 +135,7 @@ section{
     right: -120%;
     width: 50rem;
     height: 4.5rem;
+    z-index: 50;
     background: #fff;
     border-radius: .5rem;
     overflow: hidden;
@@ -173,6 +175,7 @@ section{
     top: 110%;
     right: -110%;
     padding: 1rem;
+    z-index: 50;
     border-radius: 1rem;
     box-shadow: var(--box-shadow);
     width: 35rem;
@@ -236,6 +239,7 @@ section{
  width: 30rem;
  top: 110%;
  right: -110%;
+ z-index: 50;
  box-shadow: var(--box-shadow);
  padding: 2rem;
  background: #fff;
@@ -314,6 +318,7 @@ section{
 .features .box-container .box{
    padding:3rem 2rem ;
    background: white;
+   border-radius: .5rem; 
    outline: var(--outline);
    outline-offset: -1rem;
    text-align: center;
@@ -375,8 +380,226 @@ section{
     color: orange;
     padding: .5rem 0;
  }
-/* media query */
 
+ /* cotegories */
+ .categories .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(20rem,1fr));
+    gap: 1.5rem;
+}
+.categories .box-container .box{
+    padding:3rem 0rem ;
+    background: white;
+    border-radius: .5rem;
+    outline: var(--outline);
+    outline-offset: -1rem;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+ }
+ .categories .box-container .box:hover{
+    box-shadow: 1px 1px 10px 4px green;
+}
+.categories .box-container .box img{
+    margin: 1rem 0;
+    height: 11rem;
+}
+.categories .box-container .box h3{
+    font-size: 2rem;
+    line-height: 1.8;
+    color: black;
+}
+.categories .box-container .box p{
+    font-size: 1.7rem;
+    line-height: 1.8;
+    color: gray;
+    padding: 1rem 0;
+}
+/* review */
+.review .review-slider{
+  padding: 1rem;
+}
+.review .review-slider .box{
+    padding:3rem 2rem ;
+    background: white;
+    border-radius: .5rem;
+    outline: var(--outline);
+    outline-offset: -1rem;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    transition: .2s linear;
+}
+.review .review-slider .box:hover{
+    box-shadow: 1px 1px 10px 4px green;
+}
+.review .review-slider .box img{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+}
+.review .review-slider .box h3{
+    font-size: 2.2rem;
+    padding-bottom: .5rem;
+    color: black;
+}
+.review .review-slider .box p{
+    font-size: 1.7rem;
+    line-height: 1.8;
+    color: gray;
+    padding: 1rem 0;
+}
+.review .review-slider .box .stars i{
+  color: orange;
+  font-size:1.7;
+}
+
+/* recipes */
+.recipes .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(20rem,1fr));
+    gap: 1.5rem;
+}
+.recipes .box-container .box{
+    padding:3rem 0rem ;
+    background: white;
+    border-radius: .5rem;
+    /* outline: var(--outline);
+    outline-offset: -1rem; */
+    /* text-align: center;  */
+    box-shadow: var(--box-shadow);
+ }
+ .recipes .box-container .box:hover{
+    box-shadow: 1px 1px 10px 4px green;
+}
+.recipes .box-container .box .about{
+    font-size: 1.7rem;
+    line-height: 1.8;
+    color: black;
+    margin-left: 1rem;
+    /* padding: 1rem 0; */
+}
+
+.recipes .box-container .box .content{
+    padding: 2rem;
+    padding-bottom: 1rem;
+}
+.recipes .box-container .box .content .icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1.5rem;
+    margin-top: 1rem; 
+    border-top:var(--border);
+}
+.recipes .box-container .box .content .icons a{
+    color: gray;
+    font-size: 1.5rem;
+}
+.recipes .box-container .box .content .icons a:hover{
+    color: black;
+}
+.recipes .box-container .box .content .icons a i{
+    color: green;
+    padding-right: .5rem;
+}
+.recipes .box-container .box h3{
+    font-size: 2.2rem;
+    line-height: 1.8;
+    color: black;
+    padding: 1rem;
+    margin: 1rem;
+    border-bottom:var(--border);
+    
+}
+
+
+/* footer */
+
+.footer{
+    background:white;
+}
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(20rem,1fr));
+    gap: 1.5rem;
+}
+.footer .box-container .box h3{
+   font-size: 2.5rem;
+   color: black;
+   padding: 1rem 0;
+}
+.footer .box-container .box .logo{
+  display: flex;
+  font-size: 2.5rem;
+  font-weight: bolder;
+  align-items: center;
+  color: black;
+}
+.footer .box-container .box .logo img{
+    height: 4rem;
+    width: 4rem;
+}
+.footer .box-container .box .links{
+    display: block;
+    font-size: 1.5rem;
+    color: gray;
+    padding: 1rem 0;
+}
+
+.footer .box-container .box .links i{
+  color: green;
+  padding-right:.5rem;
+}
+.footer .box-container .box .links:hover i{
+    padding-right: 2rem;
+}
+.footer .box-container .box p{
+    line-height: 1.8;
+    font-size: 1.5rem;
+    color: gray;
+    padding: 1rem 0;
+}
+.footer .box-container .box .share a{
+   height: 4rem;
+   width: 4rem;
+   line-height: 4rem;
+   border-radius: .5rem;
+   font-size: 2rem;
+   color: black;
+   margin-left: .2rem;
+   background: #eee;
+   text-align: center;
+}
+.footer .box-container .box .share a:hover{
+    background-color: green;
+    color: white;
+}
+.footer .box-container .box .email{
+    margin: .7rem 0;
+    padding: 1rem;
+    border-radius: .5rem;
+    background: #eee;
+    font-size: 1.6rem;
+    color: black;
+    text-transform: none;
+}
+.footer .box-container .box .payment-img{
+    margin-top: 2rem;
+    height: 3rem;
+}
+.footer .credit{
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    font-size: 2rem;
+    padding-top: 2.5rem;
+    color: black;
+    font-weight:bold;
+    border-top:var(--border);
+}
+.footer .credit span{
+    color: green;
+}
+/* media query */
 @media(max-width:1005px){
     html{
         font-size: 55%;
@@ -424,6 +647,10 @@ section{
     }
     .heading{
         font-size:2.5rem;
+    }
+    .footer{
+        text-align: center;
+        font-size: 2rem;
     }
 }
 
